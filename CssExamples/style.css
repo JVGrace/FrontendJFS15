@@ -1,0 +1,31 @@
+div#new1{
+    text-indent: 0cm;
+    color:violet;
+    text-align: right !important;
+}
+div#new1 p{
+    color: black !important;
+}
+.fontchoc{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+/* comments  */
+/* commwn
+*/  
+/* 
+css: 
+Cascade:  determines order in which styles when multiple rules target same element
+Following are used for defining the use of style:
+ importance:  
+ specificty: determines which style is applied by assinging weights to selectors based on their types 
+ inline style="" highest !
+ id: #id high specificity
+ .class attributes and pseudo class  medium specificty
+ p h1 div low specificity
+ important keyword is given more priority 
+ and 
+ source order 
+ */
