@@ -6,9 +6,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <style>
+      .div1{
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+      }
+      .div2{
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-start;
+      }
+      .div3{
+        display: flex;
+        justify-content: space-between;
+        align-items: normal;
+      }
+      .div4{
+        display: flex;
+        justify-content: flex-end;
+        align-items: start;
+      }
+      .div5{
+        display:flex ;
+        justify-content: stretch;
+        align-items: last baseline;
+      }
+
+
+    </style>
+
 </head>
 <body>
-  <div>
+  <div style="display: flex; justify-content: center;align-items: center;">
     <svg >
       <image width="300" height="225" href="logo.png"/> 
     </svg>
@@ -33,8 +63,7 @@
     <br> <br> <br> <br>
     <!-- now tried with table -->
      <h3>Below tried again with Table tag: </h3>
-     <div>
-       
+     <div style="text-align: center;align-items: center;justify-content: stretch;">
         <table> 
           <td><svg >
             <image width="300" height="200" href="logo.png"/> 
@@ -48,6 +77,26 @@
       </tr>
     </table>
     </div>
+    <div class="div1">
+      <a href="">Hello</a><a href="">About</a><a href="">Contact</a><a href="">LogOut</a>
+
+    </div><br> <br> <br> <br>
+    <div class="div2">
+      <a href="">Hello</a><a href="">About</a><a href="">Contact</a><a href="">LogOut</a>
+
+    </div><br> <br> <br> <br>
+    <div class="div3">
+      <a href="">Hello</a><a href="">About</a><a href="">Contact</a><a href="">LogOut</a>
+
+    </div><br> <br> <br> <br>
+    <div class="div4">
+      <a href="">Hello</a><a href="">About</a><a href="">Contact</a><a href="">LogOut</a>
+
+    </div><br> <br> <br> <br>
+    <div class="div5">
+      <a href="">Hello</a><a href="">About</a><a href="">Contact</a><a href="">LogOut</a>
+
+    </div><br> <br> <br> <br>
 
 </body>
 </html>
