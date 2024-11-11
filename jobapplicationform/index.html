@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application </title>
+</head>
+<body>
+    <h1 style="color: blue;text-align: center;"> Job Application From</h1>
+    <form action="post" style="text-align: center;">
+        <label for="firstname_input"><b>First Name:</b></label>
+        <input type="text" id="firstname_input" placeholder="First Name"><br>
+        <label for="lastname_input"><b>Last Name:</b></label>
+        <input type="text" id="lastname_input" placeholder="Last Name"><br>
+        <label for="email_input"><b>Email:</b></label>
+        <input type="email" id="email_input" placeholder="Email"><br>
+
+        <label for="date_input"><b>Date of Birth :</b></label>
+        <input id="date_input" type="date" name="date" placeholder="Date"><br><br>
+        
+        <label >Gender:</label> <br> <br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label> <br> <br> 
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label> <br> <br>
+
+        <label for="skills" >Skills: Select from below: <br> 
+            <input type="checkbox">Java<br>
+            <input type="checkbox">Frontend(Html,Css,Js)<br>
+            <input type="checkbox">Angular<br>
+            <input type="checkbox">Bootstrap<br>
+            <input type="checkbox">Sql<br>
+        </label>
+
+
+
+        <label for="resume">Give your resume here : Less than 2 MB</label><br> <br>
+        <input type="file" id="resume" placeholder="Give Resume here:"><br> <br>
+
+        <label for="comment">Why Should we Select Your? Write your answer in below</label><br> <br>
+        <textarea name="comments" id="comments" cols="30" rows="6"></textarea> <br> <br>
+        <label>
+            <input type="checkbox">Ready to work from Office?<br> <br>
+        </label>
+        <input type="submit" value="Submit Application!"><br> <br>
+        <input type="reset" value="Reset Form"><br> <br>
+    
+    </form>
+    
+</body>
+</html>
