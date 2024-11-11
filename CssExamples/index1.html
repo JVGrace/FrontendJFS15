@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index 2 CSS</title>
+    <style>
+        div {
+            color: blue;
+        }
+    
+        div.content p{
+            color:brown;
+        }
+        div#new  {
+            /* different output for h1 and without h1 specification. check by inserting h1 again.*/
+            color: black;
+        }
+        p{
+            color: inherit;
+            /* inherit example see the difference */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h4>Hello Para 1</h4>
+        <p>Hellow</p>
+        <p>Hello Para 2</p>
+    </div>
+    <div class="content">
+        <p>Hellow</p>
+        <p>Hello Para 2</p>
+    </div>
+    <div id="new">
+        <h1>Para 3 see the difference in all </h1>
+        <p>Hellow</p>
+        <p>Hello Para 2</p>
+    </div>
+</body>
+</html>
+<!-- css  different priority example with div and p element also inheret example is also present -->

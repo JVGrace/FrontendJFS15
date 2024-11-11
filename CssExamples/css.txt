@@ -1,0 +1,32 @@
+content: inner part of box where image and text appear ; can be defined using height and width
+padding: space bw content and border 
+border: a line wraps around the padding  can be  controlled using border ,
+margin outer most layer that creates space b/w elements border and surrounding elements
+\\\/////////////////////
+
+selectors:
+patters used to select and style elements in an HTML doc
+
+
+1. Type/element select:
+p{
+} gives style to all p elements 
+
+
+2. Container Selector
+
+3. Class Selector: selects all elements with specific class  ex : class="container" 
+.container{
+}
+
+4. Descendent Selector
+
+5.ID selector
+
+6.Universal Selector
+
+7.Group selector
+
+8. input attribute selector
+
+9. pseudo 
