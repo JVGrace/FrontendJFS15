@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form For Class</h1>
+    <form action="" method="post">
+        <!-- Basic Text Input -->
+        <label for="text_input">Text Input</label>
+        <input id="text_input" type="text" name="text" placeholder="Enter Text"><br><br>
+        <!-- Password Input -->
+        <label for="password_input">Password</label>
+        <input id="password_input" type="password" placeholder="Password"><br><br>
+        <!-- Email Input -->
+        <label for="email_input">Email</label>
+        <input id="email_input" type="email" placeholder="Email"><br> <br>
+        <!-- Number Input -->
+        <label for="number_input">Number</label>
+        <input id="number_input" type="number" name="number" min="1" max="100" placeholder="Number bw 1 to 100"><br> <br>
+        <!-- date and time input -->
+        <label for="date_input">Date</label>
+        <input id="date_input" type="date" name="date" placeholder="Give Date"><br><br>
+        <label for="time_input">Time</label>
+        <!-- color input -->
+        <input id="time_input" name="time" type="time" placeholder="Time?"><br><br> 
+        <label for="color_input">Color</label>
+        <input type="color" name="color" id="color_input" placeholder="Color?"> <br> <br>
+        
+        <!-- subscribe checkbox input -->
+         <label for="subscribe">Subscibe Please:</label>
+         <input type="checkbox" name="subscribe" id="subscribe"> <br> <br>
+
+        <!-- Radio part for Gender -->
+        <label >Gender:</label> <br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label> <br> <br> 
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label> <br> <br>
+        <input type="radio" name="gender" id="NotDisclose" value="Null">
+        <label for="NotDisclose">Not want to Disclose</label> <br> <br>
+        
+        <!-- drop down for country options -->
+        <label for="country">Country : </label>
+        <select name="country" id="country">
+            <option value=""></option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+            <option value="Russia">Russia</option>
+        </select> <br> <br>
+        <!-- comments or text area space for writing -->
+       <label for="comments">Comments:</label> <br>
+       <textarea name="comments" id="comments" cols="30" rows="6"></textarea> <br> <br>
+       <!-- Uploading File -->
+        <label for="file">File Upload!!:</label>
+        <input type="file" name="file" id="file"> <br> <br>
+      <!-- Range Slider -->
+       <label for="range">Range: </label>
+       <input type="range" name="range" id="range"> <br> <br>
+
+       <!-- URL Input -->
+        <label for="website">Website: </label>
+        <input type="url" name="website" id="website" placeholder="Some Website address"><br><br>
+       
+        <!-- Audio Source -->
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mp3">
+            Your Browser does not support mkv
+        </audio><br> <br>
+        <!-- Video  Source-->
+        <video width="500" height="700" controls>
+            <source src="https://videos.pexels.com/video-files/11274341/11274341-uhd_2560_1440_25fps.mp4" type="video/mp4"> <br> <br>
+            Your Browser does not support mkv
+        </video><br> <br> <br> <br>
+       <!-- Submit Button -->
+        <input type="submit" value="Submit Form">
+       <!-- Reset Button-->
+        <input type="reset" value="Reset Form">
+        
+    </form>
+    
+</body>
+</html>
