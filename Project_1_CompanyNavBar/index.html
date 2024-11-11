@@ -1,4 +1,4 @@
-<!-- Small Project of creating navbar and having 4 pages in it -->
+<!-- Small Project of creating navigation bar (without css and nav tag) and having 4 pages in it -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,27 +8,46 @@
     <title>Index</title>
 </head>
 <body>
-  <nav role="navigation">
   <div>
-  <a href="/" >
-    <img src="" alt="Logo">
-  </a>
-    <h1>Navigation Bar</h1>
-
-    
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="contact.html">ContactUs</a></li>
-          <li><a href="about.html">AboutUs</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="signup.html">Signup</a></li>
-        </ul>
+    <svg >
+      <image width="300" height="225" href="logo.png"/> 
+    </svg>
+    &NonBreakingSpace;
+    &NonBreakingSpace;
+    &NonBreakingSpace;
+          <a href="index.html">Home</a>&nbsp;
+          <a href="contact.html">ContactUs</a>&nbsp;&nbsp;
+          <a href="about.html">AboutUs</a>&nbsp;&nbsp;
+          <a href="login.html">Login</a>&nbsp;&nbsp;
+          <a href="signup.html">Signup</a>&nbsp;&nbsp;
         </div>
-      </nav>
+    <br> <br>
+    <h1>Home Page</h1>
+    <p>Hello All this is Test Home Page:</p>
+    <h2>What you want to know .... Just click on submit and checkbox</h2>
+    <label for="box">Subscibe to My HTML</label>
+    <input type="checkbox" name="check" id="box"><br> <br>
+    <input type="submit" value="Subscribe submit"> <br>
+
     </div>
-    
-    
-    
+    <br> <br> <br> <br>
+    <!-- now tried with table -->
+     <h3>Below tried again with Table tag: </h3>
+     <div>
+       
+        <table> 
+          <td><svg >
+            <image width="300" height="200" href="logo.png"/> 
+          </svg>
+          </td>
+        <td><a href="index.html">Home : </a>&nbsp;&nbsp;</td>
+        <td><a href="contact.html">Contact Us : </a>&nbsp;&nbsp;</td>
+        <td><a href="about.html">AboutUs : </a>&nbsp;&nbsp;</td>
+        <td><a href="login.html">Login : </a>&nbsp;&nbsp;</td>
+        <td><a href="signup.html">SignUp : </a>&nbsp;&nbsp;</td>
+      </tr>
+    </table>
+    </div>
 
 </body>
 </html>
