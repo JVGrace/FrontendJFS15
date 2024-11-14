@@ -1,0 +1,218 @@
+<!-- 5 Examples of grid  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Examples of Css Grid</title>
+    <style>
+        body{
+            background: radial-gradient(circle,red 25%,orange 3%,yellow 40%,green 50%,black 10%);
+        }
+        .grid-content{
+            display: grid;
+            margin: 10px;
+            border: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,1fr);
+            background-color:beige;
+
+        }
+        .items{
+            display: grid;
+            margin: 20px;
+            border: 20px;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 10px;
+            margin: 10px;
+            border: 10px;
+
+        }
+        .grid-item{
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+
+        }
+        /* Repeat Funtion: takes 2 arguments 1:how many columns to divide 2: width of element 
+            Defination:
+
+        */
+        /* minmax(100px,1fr): function that fixes minmum width of each column as 100px and max 1fr(taking up available space) */
+        .contenner{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+            gap: 10px;
+        }
+        .itens{
+            background-color: aquamarine;
+            padding: 30px;
+            text-align: center;
+
+        }
+        @media (min-width:600px )and(orientation:landscape ) {
+            .contenner{
+                display: grid;
+                margin: 10px;
+                border: 20px;
+                padding: 10px;
+                background-color: bisque;
+                grid-template-columns: minmax(100px,1fr);
+                min-width: 200px;
+
+            }
+        }
+        @media (min-width:1024px) {
+            .grid-content{
+                font-size:20px;
+                display: grid;
+                margin: 20px;
+                border: 5px dotted lightcoral;
+                padding: 10px;
+                background-color: blueviolet;
+                grid-template-columns: minmax(200px,1fr);
+                box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 1),-5px -20px 20px rgba(0, 100, 200, 1);
+            }
+            
+        }
+        @media (max-width:1fr) {
+            .itens{
+            background-color: crimson;
+            padding: 30px;
+            text-align: center;
+            border: 10px;
+            padding: 20px;
+            margin: 10px;    
+
+        }
+        }
+        .pseduexamp{
+            
+            a{
+                color: aqua;
+                text-decoration: dotted;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 2);
+            }
+            a:hover{
+                color: yellowgreen;
+                text-decoration: underline;
+
+            }
+            a:focus{
+                color: aquamarine;
+                text-decoration: line-through;
+            }
+            a:visited{
+                color: blueviolet;
+                text-decoration: overline;
+            }
+
+        }
+        li{
+            color: black;
+            font-size: 24px;
+        }
+        li:nth-child(even){
+            background-color: blueviolet;
+            /* font-size: 12px; */
+        }
+        li:nth-child(3n){
+            color: crimson;
+            /* font-size: 24px; */
+        }
+        h1::before{
+            content:"####";
+            color: gold;
+        }
+        h1::after{
+            content: "######";
+            color:blueviolet;
+
+        }
+        h2::first-letter{
+            color: crimson;
+        }
+        h3::first-line{
+            color: blueviolet;
+        }
+        h2::marker{
+            background-color: black;
+        }
+        h2::selection{
+            text-shadow: purple,10px;
+        }
+        .coontent{
+            color: aquamarine;
+        }
+        .link{
+            color: brown;
+        }
+
+        
+    </style>
+ </head>
+ <body>
+    <div class="grid-content">
+        <div class="items">hello</div>
+        <div class="items">bye</div>
+        <div class="items">goodbye</div>
+        <div class="items">good</div>
+    </div>
+    <div class="container">
+        <div class="grid-item">3</div>
+        <div class="grid-item">4 2</div>
+        <div class="grid-item">6445</div>
+        <div class="grid-item">4323</div>
+        <div class="grid-item">4323</div>
+        <div class="grid-item">4323</div>
+        <div class="grid-item">32</div>
+    
+</div>
+<div class="contenner">
+    <div class="itens">one</div>
+    <div class="itens">two</div>
+    <div class="itens">three</div>
+    <div class="itens">six</div>
+    <div class="itens">nine</div>
+    <div class="itens">three</div>
+    <div class="itens">three</div>
+    <div class="itens">three</div>
+    <div class="itens">four</div>
+</div>
+<div class="coontent">heloow main coontent class </div>
+<div class="coontent link"> linked class </div>
+
+<div class="pseduexamp">
+    <p>visit</p>
+    <p>back </p>
+    <p>again</p>
+    <a href="index.html">Visit this</a>
+</div>
+<ul>
+    <li>New</li>
+    <li>Old</li>
+    <li>Old</li>
+    <li>Fast</li>
+    <li>Format</li>
+    <li>Whelding</li>
+    <li>Whelding</li>
+    <li>Whelding</li>
+    <li>Whelding</li>
+    <li>Furious</li>
+    <li>Fast</li>
+    <li>Fast</li>
+    <li>Fast</li>
+</ul>
+<h1>Welcome to psedu element example</h1>
+<h2>First Letter Pseudo Element Example </h2>
+<h3>First line example.   Helloow</h3>
+<h2>Hellow</h2>
+ </body>
+ </html>

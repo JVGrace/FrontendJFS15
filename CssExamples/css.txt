@@ -1,6 +1,9 @@
 content: inner part of box where image and text appear ; can be defined using height and width
 padding: space bw content and border 
 border: a line wraps around the padding  can be  controlled using border ,
+border defines boundry of the element we define it by size then style then color
+write 5 examples:
+
 margin outer most layer that creates space b/w elements border and surrounding elements
 \\\/////////////////////
 
@@ -29,4 +32,46 @@ p{
 
 8. input attribute selector
 
-9. pseudo 
+9. pseudo classes:
+is used to define special state of an element for example you can apply styles when a user hovers over  link or when form element is focused
+
+Common pseudo class examples
+:hover ->user hovers on element
+:focused-> element is focused
+:visited->links have been visited
+:active->element is currently being activated such as link being clicked
+:nth-child(): applies style to element based on postition in a group
+
+pseudo- element: allows you to style specific parts of an element such as first letter ,first line
+inserting content before or after an element
+
+::before inserts content before an element
+::after inserts content after an element
+::first-letter styles first letter of an element
+::first-line tyles first letter of an element
+::selection
+\
+
+\\
+Pseudo class
+Gradient is change in color.
+Transition change in property
+animation change in style
+
+Linear Gradient 
+background: linear-gradient(direction, color-stop1,color-stop2....);
+\
+Radical Gradient
+background: radical-gradient(shape-size,color-stop1.....);
+\
+Conical Gradient
+background: conical-gradient(shape-size,....);
+
+Timing Funtions :
+ease: starts slow speeds up then slows down
+linear: constant speeds
+ease-in: start slow then speed up
+ease-out:start fast and slow down
+ease-in-out:start slow speeds up then slows down
+
+
