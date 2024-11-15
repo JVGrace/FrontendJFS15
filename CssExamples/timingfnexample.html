@@ -9,6 +9,38 @@
             0% {left: 0;}
             100% {left: 200px;}
         }
+        @keyframes boxmodel1 {
+            0%{
+                left: 0;
+                /* background-color: aquamarine; */
+            }
+            20%{
+                left: 200px;
+                background-color: crimson;
+            }
+            50%{
+                left: 400px;
+                background-color:aquamarine;
+            }
+            80%{
+                left: 600px;
+                background-color: blanchedalmond;
+            }
+            100%{
+                left: 800px;
+                background-color: cornflowerblue;
+            }
+        }
+        .box23{
+            width: 400px;
+            border: 10px solid lightgray;
+            animation-name: boxmodel1;
+            animation-duration: 4s;
+            position: relative;
+            animation-timing-function: ease;
+            animation-delay: 0.5s;
+            
+        }
         .box{
             width: 300px;
             border: 10px dotted lightgray;
@@ -54,6 +86,10 @@
     <div class="box ease-out">Ease-out Example</div>
     <br> <br> <br> <br> <br> <br> <br> <br>
     <div class="box1 t">Transform Example</div>
+    <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+    <div class="box23">Box @ 23 Example</div>
 
     
 </body>
