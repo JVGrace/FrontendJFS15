@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Funtion Example</title>
+    <style>
+        @keyframes  boxmodel{
+            0% {left: 0;}
+            100% {left: 200px;}
+        }
+        .box{
+            width: 300px;
+            border: 10px dotted lightgray;
+            background: radial-gradient(circle,red 30%,green 40%,yellow 15%,blue 20%);
+            animation-name: boxmodel;
+            animation-duration: 2s;
+            position: relative;
+        }
+        .ease{
+            transition: width 1s ease 1s;
+        }
+        .ease-in{
+            transition: width 1s ease-in 1s;
+        }
+        .ease-out{
+            transition: width 1s ease-out 1s;
+        }
+        .linear{
+            transition: width 1s linear 1s;
+        }
+        .t{
+            transition: transform 1s ;
+        }
+        .box1{
+            border: 20px solid;
+            width: 200px;
+            display: flex;
+            align-items: center;
+        }
+
+        .box:hover{
+            width: 100px;
+        }
+        .box1:hover{
+            transform:rotate(325deg) scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box ease">Ease Example</div>
+    <div class="box linear">Linear Example</div>
+    <div class="box ease-in">Ease-in Example </div>
+    <div class="box ease-out">Ease-out Example</div>
+    <br> <br> <br> <br> <br> <br> <br> <br>
+    <div class="box1 t">Transform Example</div>
+
+    
+</body>
+</html>

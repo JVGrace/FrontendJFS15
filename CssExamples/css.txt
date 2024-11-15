@@ -75,3 +75,27 @@ ease-out:start fast and slow down
 ease-in-out:start slow speeds up then slows down
 
 
+Animation:
+
+animation name name of animation
+animation duration: how long
+animation-Timing-Funtion define pacing of animation
+animation iteration count how many times ani repeat
+animation direction : direction of animation
+animation delay time before animation starts
+
+
+Positioning Property
+postition controlls the placment of element in the document
+postition: static : Normal document flow no Positioning applied
+postition: relative : positions element relative to its normal postition in doc flow
+postition: absolute : removes element from normal document flow, Positioning it relative to nearest postition ancestor  used for popups, dropdowns and overlays
+postition: fixed : postitions the relative to viewport browser window or fixed 
+postition: sticky : behaves like  relative until specified scroll paint after which it behaves like fixed.
+
+
+
+
+
+
+
