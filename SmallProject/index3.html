@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maison - Fine Dining</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #faf7f2;
+        }
+
+        /* Animated Header */
+        .header {
+            height: 60vh;
+            background: linear-gradient(
+                45deg,
+                #ff6b6b,
+                #feca57,
+                #48dbfb,
+                #ff6b6b
+            );
+            background-size: 400% 400%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            animation: gradientBG 15s ease infinite;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Menu Navigation */
+        .menu-nav {
+            background: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .menu-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .menu-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .menu-nav a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Menu Container */
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Menu Sections */
+        .menu-section {
+            margin-bottom: 4rem;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .menu-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #ff6b6b;
+        }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Menu Item */
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        .menu-item-image {
+            height: 200px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .menu-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 1.5rem;
+        }
+
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d3436;
+        }
+
+        .menu-item-price {
+            color: #ff6b6b;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .menu-item-description {
+            color: #636e72;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .dietary-info {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #ff6b6b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .menu-nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>LA MAISON</h1>
+            <p>Experience the finest French cuisine in an elegant atmosphere</p>
+        </div>
+    </header>
+
+    <nav class="menu-nav">
+        <ul>
+            <li><a href="#appetizers">Appetizers</a></li>
+            <li><a href="#mains">Main Courses</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-container">
+        <section id="appetizers" class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/400/320" alt="French Onion Soup">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">French Onion Soup</h3>
+                            <span class="menu-item-price">$12</span>
+                        </div>
+                        <p class="menu-item-description">Classic French onion soup topped with melted Gruyère cheese and crispy baguette.</p>
+                        <p class="dietary-info">Vegetarian</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/400/320" alt="Escargots">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Escargots de Bourgogne</h3>
+                            <span class="menu-item-price">$16</span>
+                        </div>
+                        <p class="menu-item-description">Burgundy snails in garlic-herb butter with fresh baguette.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mains" class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/400/320" alt="Coq au Vin">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Coq au Vin</h3>
+                            <span class="menu-item-price">$32</span>
+                        </div>
+                        <p class="menu-item-description">Braised chicken in red wine sauce with pearl onions and mushrooms.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/400/320" alt="Beef Bourguignon">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Beef Bourguignon</h3>
+                            <span class="menu-item-price">$36</span>
+                        </div>
+                        <p class="menu-item-description">Classic French beef stew with red wine, mushrooms, and pearl onions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/400/320" alt="Crème Brûlée">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Crème Brûlée</h3>
+                            <span class="menu-item-price">$12</span>
+                        </div>
+                        <p class="menu-item-description">Classic vanilla custard with caramelized sugar crust.</p>
+                        <p class="dietary-info">Gluten-free</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="/api/placeholder/400/320" alt="Chocolate Soufflé">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Chocolate Soufflé</h3>
+                            <span class="menu-item-price">$14</span>
+                        </div>
+                        <p class="menu-item-description">Warm chocolate soufflé served with vanilla ice cream.</p>
+                        <p class="dietary-info">Please allow 20 minutes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
