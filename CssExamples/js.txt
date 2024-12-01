@@ -1,0 +1,56 @@
+JavaScript is responsible for the interactive layer of web page.
+programming language used runs in browser and allows website to respond to user actions
+
+Java and JavaScript not at all related with each other have similar syntax 1995 Netscape   originally named LiveScript
+Standardized ECMAScript too ensure it works same across all browser.
+
+Two latest versions EC5 2009 and EC6 2015
+ major updates 
+ECMAScript is latest version that JavaScript follows
+
+Written in two ways internal and external 
+we use script tag while writing internal js
+whereas use link to connect the other external js file to run js in site
+js is case sensitive and white space insensitive.
+scopes defines the visibility and lifespan of a element.
+
+every curly braces is forming a block and block is just a small area 
+
+four types of scope:
+1. Global scope : variables declared outside of fn/block have global scope;
+2. Function scope : variable declared inside fn are limited to global scope; cannot be accessed outside fn even if fn is global.
+3. Block scope : refers to code segment bw curly braces for example loops, conditionals and fns	
+4. Module scope : variables declared inside JS modules declared inside Module scope , need to explicitly export and import variables and functions to use them in other files. 
+
+
+Polyfill: is piece of code that adds new JS funtion to old browsers might not have.Ex core js
+Transfill: converts modern js code into older versions that browsers understand.Ex Babel is popular tranfiler
+
+LOOPS:
+for(intialization;condition;increment/decrement) 
+while(condition) 
+do() while(condition)
+for in: for (key in object)
+for of: for (value of iterable)
+
+Funtion :
+Reusable block of code to perform actions reducingg repetition and keepint the code organized .
+you can thank of them as named blocks of code that can be called multiple times.
+
+switch (value){
+    case value1:
+    ??code
+    break;
+    case value2:.....
+    break;
+    default:
+    //default block:
+}
+
+
+unary operator: converts string or non number to number.
++a:a
++'3'->3
+
+
+nullish coelesing assignment a??=b: a=a??b It assigns a value to a variable is null or undefined 
