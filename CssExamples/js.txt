@@ -54,3 +54,143 @@ unary operator: converts string or non number to number.
 
 
 nullish coelesing assignment a??=b: a=a??b It assigns a value to a variable is null or undefined 
+
+
+Rest Parameters allows a function to accept an arbitary number of arguments as an array.
+
+Defined using three dots (...) followed by a variable name.
+
+takes single parameter or multiple parameter and gives it to an array instance.
+Spread syntax allows you to expand an iterable like array into a list of arguments.
+Denoted by (...) dots.
+
+time functions:
+
+setTimeout(func,delay,...args) :executes a fn once after a specified delay
+setInterval(func,delay,...args): executes a fn with fixed delay bw each interval
+
+Arrow function provide a concise way to write fn in js.
+
+Syntax of arrow fn
+:: 
+let func={}=>expression.
+
+Example::
+
+let sum=(a,b)=>a+b;
+console.log(sum(3,6));
+
+Types Coersion: values of one datatype are automatically converted(or coersed) to another datatype
+JS is a lossely typed language so variables are not fixed to one datatype.
+
+Implicit: happens automatically when js tries to make sense of operation involving diff types.
+Explict: developer manually converts values from one to another
+
+
+Number is added to string js converts number to string directly.
+Boolean coersion 
+Falsy value:{coverts to false :}  0 "" null, undefined ,NaN
+
+let str='124.321';
+parseInt(str);
+parseFloat(str);
+
+Closure:
+Feature in js where an inner fn has access to outer function variable even after outer fn has finished executing 
+in this way we can also treat outer fn variables as private variable as well.
+
+Prototype: 
+historical getter ad setter for prototype used to set add prototype.
+
+Object.getPrototpeOF() and Object.setPrototypeOF();
+
+
+call(): invokes fn with given this value and arguments provided one by one
+
+
+apply(): invokes fn with a given this value and allows you to pass in arguments as an array.
+
+bind(): returns a new fn allowing you to pass any number of arguments.
+
+let invokes= invokes.bind();
+invokes("hello","why");
+
+dom: document object model : is programming interdace that represents structure of html and xml doc as a tree of objects each element attribute and piece of text in do is represented as a node  in this tree structure allowing scripts to manipulate doc content structure and style.
+
+
+bom: browser object model : browser in the form of object is used to interact with browser components such as window location history and navigator .
+client : frontend user
+
+Dom: document funtions: all returns a collection of those elements
+getElementById(id): give id inside {id="yo" or #yo}
+getElementByClassName(): give class name inside {class="container}
+getElementByTag(): give tag inside like h1 , h2, header,div
+
+querySelectors():
+returns first matching element in the document 
+returns null if no matches are found.
+
+Modifying DOM elements:
+
+innerHTML: retrieves and replaces the HTML contet inside an element including all child elements and their markup.
+
+
+events are occurences that happen in the browser environment triggered by user actions or system notifications.
+click 
+mouse hover on element 
+pressing a key
+system event like completion ofa n asynchronous task.
+
+Type of Events:
+
+Event Listener:
+addEventListener(): a method to attach an event handler to an element enabling it to listen for specific events and execute a code/callback funtion in response t othose events
+
+element.addEventListener(event,callbackFuntion,options);
+callback function: function passed as argument 
+removeEventListener():opposite of addEventListener()
+
+Loosing control of functions inside a callback hell is called inversion of control.
+
+to answer this issue asynchronous js came 
+
+Js is a synchronous and single threaded language.
+This means :
+1.It can only do one thing at a time.
+2.It has one call stack and it can execute one task at a time.
+3.Any code provided to JS will be executed immediately by JS engine while waiting.
+But due to callbacks we can do async things in JS.
+
+Garbage collection in js is process of automatically reclaimingg memory that is no longr in use or is unreachable in the program . this pricess helps in freeing up memory preventing ,memory leaks and optimizing performance.
+
+performance.now():
+It returns a high resolution timestamp in miliseconds and is primarily used for performance monitoring and optimization tasks in web development. 
+
+fetch API in JS is modern promise based for making HTTP request. It simplifies asynchronous communication with servers.
+It allows you to make requests to get and send data and it returns a promise that resilves to response of request.
+
+has 2 methods 
+.then(){
+
+}
+.catch(){
+
+}
+You can chain multiple promises with .then .then
+Advanced Promise Methods:
+1. Promise.all(): waits for all promises in an array to resolve if any promise is rejected the entire Promise.all( is rejected with that error.
+
+2. 
+
+
+
+
+      1
+    3 * 5 
+  7 * 9 * 11
+   13 * 15
+      17
+
+AJAX: asynchronous js and xml is a set of techniques in web development that allows webpages to request and receive data from a servers asynchronously without requiring a full page reload this approach revolitionized how web application are built offereing a faster more dynamic user exp.
+JSON is a lightwifht data interchange format that is easy for humans to read and write and easy for machines to parse and generate it is primarily used to transmit data bw server and web application as an alternative to xml./
+

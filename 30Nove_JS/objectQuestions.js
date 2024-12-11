@@ -510,3 +510,18 @@ function interin2Arr(arr1,arr2){
 let a1=[2,3,4,5,6,7,4,3,34,21,3,5];
 let a2=[3,25,2,1,6,54,88,45];
 console.log(interin2Arr(a1,a2));
+
+
+
+function invokes(g1,g2,g3){
+    console.log(g1+" "+this.fname+" "+this.lname+" from City: "+this.city+" "+g2+" "+ g3);
+}
+let emp1={
+    fname:"Wow",
+    lname:"New",
+    city:"hyderabad"
+}
+let invoke1= invokes.bind(emp1);
+invokes.call(emp1,"Haah","Nande","Omae Wa Moe Shindairu");
+invokes.apply(emp1,["Ore","ore","Muda Muda"])
+invoke1("hello","why","how");
